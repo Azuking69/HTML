@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>僕の仲間募集フォーム</title>
+</head>
+
+<body>
+    <h1>僕の仲間募集フォーム</h1>
+    <form action="receive.html" method="post">
+    <dl>
+        <dt><label for="your_name">お名前</label></dt>
+        <dd>
+            <input type="text" id="your_name" name="your_name">
+        </dd>
+        <dt><label for="your_email">メールアドレス</label></dt>
+        <dd>
+            <input type="email" id="your_email" name="your_email">
+        </dd>
+        <dt>性別</dt>
+        <dd>
+            <ul> <!--同じname属性なら同じ質問として扱う-->
+                <label>
+                    <li><input type="radio" name="gender" value="男"> 男性</li>
+                </label>
+                <label>
+                    <li><input type="radio" name="gender" value="女"> 女性</li>
+                </label>
+            <ul>
+        </dd>
+        <dt>希望する職種</dt>
+        <dd>
+            <select name="job">
+                <option value="Web ディレクター">Web ディレクター</option>
+                <option value="Web デザイナー">Web デザイナー</option>
+                <option value="web プログラマー">Web プログラマー</option>
+                <option value="フロントエンド・エンジニア">フロントエンド・エンジニア</option>
+            </select>
+        </dd>
+        <dt>出来ること（複数選択可）</dt>
+        <dd>
+            <ul>
+                <label>
+                    <li><input type="checkbox" neme="skill" value="HTML"> HTML</li>
+                </label>
+                <label>
+                    <li><input type="checkbox" neme="skill" value="CSS"> CSS</li>
+                </label>
+                <label>
+                    <li><input type="checkbox" neme="skill" value="JavaScript"> JavaScript</li>
+                </label>
+                <label>
+                    <li><input type="checkbox" neme="skill" value="PHP"> PHP</li>
+                </label>
+                <label>
+                    <li><input type="checkbox" neme="skill" value="SQL"> SQL</li>
+                </label>
+                <label>
+                    <li><input type="checkbox" neme="skill" value="Photoshop"> Photoshop</li>
+                </label>
+                <label>
+                    <li><input type="checkbox" neme="skill" value="Illustrator"> Illustrator</li>
+                </label>
+            </ul>
+        </dd>
+        <dt>メッセージ</dt>
+        <dd>
+            <textarea name="message" cols="40" rows="8"></textarea>
+        </dd>
+    </dl>
+    <p><input type="submit" value="送信する"></p>
+    </form>
+</body>
+
+</html>
